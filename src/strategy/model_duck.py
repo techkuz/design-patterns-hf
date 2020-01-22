@@ -5,6 +5,7 @@ from src.strategy.quack import Quack
 
 class ModelDuck(Duck):
     def __init__(self):
+        super().__init__()
         self.fly_behavior = FlyNoWay()
         self.quack_behavior = Quack()
 

@@ -5,6 +5,7 @@ from src.strategy.quack import Quack
 
 class MallardDuck(Duck):
     def __init__(self):
+        super().__init__()
         self.quack_behavior = Quack()
         self.fly_behavior = FlyWithWings()
 
