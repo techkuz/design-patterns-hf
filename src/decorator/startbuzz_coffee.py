@@ -1,3 +1,4 @@
+from src.decorator.house_blend import HouseBlend
 from src.decorator.beverage import Beverage
 from src.decorator.dark_roast import DarkRoast
 from src.decorator.espresso import Espresso
@@ -12,12 +13,15 @@ class StarBuzzCoffee:
         print(beverage.get_description() + " $" + str(beverage.cost()))
 
         beverage2: Beverage = DarkRoast()
+        print(beverage2)
         beverage2 = Mocha(beverage2)
+        print(beverage2.beverage)
         beverage2 = Mocha(beverage2)
+        print(beverage2.beverage)
         beverage2 = Whip(beverage2)
         print(beverage2.get_description() + " $" + str(beverage2.cost()))
 
-        beverage3: Beverage = DarkRoast()
+        beverage3: Beverage = HouseBlend()
         beverage3 = Soy(beverage3)
         beverage3 = Mocha(beverage3)
         beverage3 = Whip(beverage3)

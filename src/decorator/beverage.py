@@ -1,5 +1,6 @@
 from abc import abstractmethod, ABC
 
+
 class Beverage(ABC):
     description: str = "Unknown beverage"
 
